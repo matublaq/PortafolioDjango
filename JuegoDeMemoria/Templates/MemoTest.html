@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Memo-test</title>
+    {% load static %}
+    <link href="{% static 'CSS/MemoTestStyle.css' %}", rel="stylesheet">
+    
+<!------------Google-font------------>
+
+
+<!----------------------------------->
+<!------------CSS------------>
+    <style>
+        
+    </style>
+<!--------------------------->
+</head>
+<body>
+    <header>
+        <div class="Title">
+            <h1 class="Title-text">MEMO-TEST</h1>
+            <div class="Sobretitulo">
+                <h2>Muestra tus capacidades</h2>
+                <p>Hoy es {{fecha_y_hora.day}}/{{fecha_y_hora.month}}/{{fecha_y_hora.year}}</p>
+            </div>
+        </div>
+    </header>
+    <div class="navegacion">
+        <nav>
+            <a href="http://localhost:8000/Inicio/Home">Inicio</a>
+        </nav>
+    </div>
+    <br><br><br>
+    <main>
+        {{imagenes}}
+        <br>
+        {{posiciones}}
+        <div class="Memo-test">
+            <div class="fila 1">
+                <div class="posicion 1"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.0}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 2"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.1}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 3"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.2}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 4"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.3}}.jpg", alt="Caballo"></a></div>
+            </div>
+            <div class="fila 2">
+                <div class="posicion 5"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.4}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 6"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.5}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 7"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.6}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 8"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.7}}.jpg", alt="Caballo"></a></div>
+            </div>
+            <div class="fila 3">
+                <div class="posicion 9"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.8}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 10"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.9}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 11"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.10}}.jpg", alt="Caballo"></a></div>
+                <div class="posicion 12"><a href="#"><img src="..\static\Media\Caballos\Caballo{{imagenes.11}}.jpg", alt="Caballo"></a></div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer>
+
+    </footer>
+</body>
+</html>

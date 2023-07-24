@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aleatorio</title>
+    {% load static %}
+    <link href="{% static 'CSS/style_aleatorio.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="http://localhost:8000/Inicio/Home" style="color: white">Inicio</a>
+    </header>
+    <main>
+        <div class="photo-resive">
+            <p>Foto recibida</p>
+            <hr>
+        </div>
+        <div class="chat">
+            <p>Chat</p>
+        </div>
+        <div class="photo-send">
+            <input class="foto" type="file">
+            <div class="photo-send-text">
+                <hr>
+                <p>Foto enviada</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

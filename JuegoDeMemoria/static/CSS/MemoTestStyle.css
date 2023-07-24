@@ -1,0 +1,70 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+/*----------body----------*/
+body {
+    background-color: #0ac3e9;
+}
+/*------------------------*/
+
+/*--------------HEADER-------------*/
+header {
+    background-color: rgba(0, 0, 255, 0.356);
+}
+
+.Title-text {
+    text-align: center;
+    font-size: 50px;
+}
+
+.Sobretitulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Sobretitulo h2{
+    font-size: 25px;
+}
+.Sobretitulo p{
+    color: rgb(92, 87, 87);
+    font-size: 16px;
+
+    align-items: center;
+}
+/*---------------------------------*/
+.navegacion {
+    background-color: rgba(0, 0, 255, 0.571);
+}
+/*----------JUEGO----------*/
+.Memo-test {
+    background-color:whitesmoke;
+
+    height: 290px; /* (80+5*2)*3+20=290px  */
+    width: 320px; /* (65+5*2)*4+20=320 */
+    margin: auto; /*Contenedor en el centro*/
+    padding: 10px;
+}
+
+.fila {
+    background-color: rgba(51, 255, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.posicion {
+    height: 80px;
+    width: 65px;
+    background-color: rgb(129, 114, 114);
+    margin: 5px;
+    
+    text-align: center;
+    align-items: center;
+}
+
+.fila img{
+    width: 65px;
+}
+/*-------------------------*/

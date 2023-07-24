@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Introduccion JS</title>
+    <!------------CSS------------>
+    {% load static %}
+    <link href="{% static 'CSS/style_PruebaJS.css' %}" , rel="stylesheet">
+    <style>
+
+    </style>
+    <!-- ----------JS----------- -->
+    <!-- Imbocamos el jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){/*Esto se ejecuta una vez que se cargo toda la pagina*/
+            //Aqui va el codigo JavaScript
+            alert("Hola mundo, te saludo desde script en el html");
+
+            $("body").hide().fadeIn(500);//Con el hide() ocultamos el body y con el efecto fideIn() lo volvemos a mostrar en 0,5segundos 
+            
+
+            
+            /*---------- Contenedor 6 ----------*/
+            var caballos_img = document.querySelectorAll("#imagenes_caballos img"); //Cada vez que seleccionamos un elemtto de ".imagenes_caballos" se agrega a la lista de "caballos_img"
+            for(let i=0; i<caballos_img.length; i++){
+                caballos_img[i].addEventListener("click", cambiarFoto, false);
+            }
+            /*---------- ------------ ----------*/
+
+            /*---------- Contenedor 7 ----------*/
+            /*Al ejecutar estas lineas lo que tiene en cuenta lo que esta escrito en el HTML por default, no tiene en cuneta lo que se escribio antes usando el js*/
+            $("#contenedor7").append("<p>Esto esta usando un 'append'</p>");//Agrega despues de la ultima etiqueta
+            $("#contenedor7").prepend("<p>Esto esta usando el 'prepend'</p>");//Agrega antes de la primera etiqueta
+            $("#contenedor7").before("<p>Esto esta usando el 'before'</p>");//Agrega antes del contenedor que se esta seleccionando
+            $("#contenedor7").after("<p>Esto esta usando el 'after'</p>");//Agrega despues del contenedor que se esta seleccionando
+            //$("#contenedor7 p").text("<p>Buenas</p>");//No maneja etiquetas, por eso escribe el <p></p>. La funcion "text" sustituye texto
+            /*---------- ------------ ----------*/
+
+        });
+    </script>
+    <!-- ----------------------- -->
+</head>
+
+<body onload="init();">
+    <div id="contenedor1">
+        <p style="text-align: center">Contenedor 1</p>
+
+        <div class="cabecera">
+            <a href="http://localhost:8000/Inicio/Home">Home</a>
+            <script src="../static/JS/PruebaJS/contenedor1.js"></script>
+        </div>
+        <h1>Hola</h1>
+        <button onclick="alert('Hola, te saludo desde el boton del html')", style="width: 100px">Alerta</button>
+        <br>
+    </div>
+
+    <br>
+    <hr>
+
+    <div id="contenedor2">
+        <p style="text-align: center">Contenedor 2</p>
+
+        <script src="../static/JS/PruebaJS/contenedor2.js"></script>
+    </div>
+
+    <br>
+    <hr>
+    
+    <div id="contenedor3">
+        <p style="text-align: center">Contenedor 3</p>
+
+        <p>Ingreso de personas a la base de datos</p>
+        <p>Estas son todas las personas que ingresaron sus dni</p>
+        <script src="../static/JS/PruebaJS/contenedor3.js"></script>
+    <div>
+
+    <br>
+    <hr>
+    
+    <div id="contenedor4">
+        <p style="text-align: center">Contenedor 4</p>
+
+        <input type="button", id="boton1">
+        <input type="button", id="boton2">
+        <input type="text", id="micuadro">
+        <script src="../static/JS/PruebaJS/contenedor4.js"></script>
+        <br>
+    <div>
+        
+    <br>
+    <hr>
+
+    <p style="text-align: center">Contenedor 5</p>
+    <div id="contenedor5">
+        <script src="../static/JS/PruebaJS/contenedor5.js"></script>
+
+        
+        <table border="solid", id="mitabla1">
+            <tr>
+                <td colspan="4"><p style="text-align: center; color: rgb(162, 179, 41)"><strong>Calculadora</strong></p></td>
+            </tr>
+            <tr>
+                <td id="resultado" type="text" colspan="4" style="height: 60px; text-align: left">0</td>   
+            </tr>
+            <tr>
+                <td><input type="button" value="(" id="open("></td>
+                <td><input type="button" value=")" id="close)"></td>
+                <td><input type="button" value="Reset" id="reset"></td>
+                <td style="width: 50px"><input type="button" value="Del" id="del"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" id="one"></td>
+                <td><input type="button" value="2" id="two"></td>
+                <td><input type="button" value="3" id="three"></td>
+                <td style="width: 50px"><input type="button" value="/" id="div"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" id="four"></td>
+                <td><input type="button" value="5" id="five"></td>
+                <td><input type="button" value="6" id="six"></td>
+                <td style="width: 50px"><input type="button" value="*" id="mult"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" id="seven"></td>
+                <td><input type="button" value="8" id="eight"></td>
+                <td><input type="button" value="9" id="nine"></td>
+                <td style="width: 50px"><input type="button" value="-" id="less"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="•" id="point"></td>
+                <td><input type="button" value="0" id="zero"></td>
+                <td><input type="button" value="=" id="equal"></td>
+                <td style="width: 50px"><input type="button" value="+" id="plus"></td>
+            </tr>
+            <tr>
+                <td colspan="4" style="height: 20px"><p style="font-size: 10px">Matublaq</p></td>
+            </tr>
+        </table> 
+        <br>
+    </div>
+    
+    <br>
+    <hr>
+    
+    <div id="contenedor6">
+        <p style="text-align: center">Contenedor 6</p>
+        <script src="../static/JS/PruebaJS/contenedor6.js"></script>   
+        
+        <p>Hoy es: <script>dia_de_hoy();</script></p>
+        <div id="imagenes_caballos">
+            <img id="caballo1" class="caballo one" src="https://fotografias.antena3.com/clipping/cmsimages01/2022/06/11/5C17BD75-1BC1-4F5E-A0F4-2868DA68015D/compra-caballo-subasta-estando-borracho_94.jpg?crop=1920,1080,x0,y236&width=800&height=450&optimize=medium&format=webply" alt="caballo1" onmouseover="aviso()">
+            &nbsp;
+            <img id="caballo2" class="caballo two" src="https://img.freepik.com/foto-gratis/caballo-alezan-brown-mane-mane_1303-389.jpg?w=996&t=st=1674172935~exp=1674173535~hmac=66de087dd2c57958cea1ff61d3704f9332a979d4a92953d17373959a02563788" alt="caballo2">
+            &nbsp;
+            <img id="caballo3" class="caballo three" src="https://concepto.de/wp-content/uploads/2021/07/caballos-e1626738224231.jpg" alt="caballo3">
+            &nbsp;
+            <img id="caballo4" class="caballo four" src="https://img.freepik.com/foto-gratis/caballo-corriendo-paddock-arena-verano-animales-rancho_639032-546.jpg?w=996&t=st=1674416938~exp=1674417538~hmac=a032db625b37885b0bc6a758914f0fc6f4392648ddaefda8e20aef29b26d5370" alt="caballo4">
+            &nbsp;
+            <img id="caballo5" class="caballo five" src="https://cdn.pixabay.com/photo/2017/10/31/07/49/horses-2904536_960_720.jpg" alt="caballo5">
+            
+        </div>
+    </div>
+     <script>/*Oculta las imagen hecho sin jQuery*/
+        /*var imagen = document.querySelectorAll("#contenedor6 img");
+        for(let i=0; i<imagen.length; i++){
+           imagen[i].style.visibility = "hidden"; 
+        }*/
+        /*Ocultar las imagen hecho con jQuery*/
+        //$("#contenedor6 img").hide();
+    </script>
+    <br>
+    <hr>
+
+    <p style="text-align: center">Contenedor 7</p>
+    <div id="contenedor7">
+        <script src="../static/JS/PruebaJS/contenedor7.js"></script>
+        
+        <p id="mensaje_buenas">Buenas</p>
+        
+        <form action="" method="get">
+            <input name="" type="text" id="usuario"><br>
+            <input name="" type="text" id="nombre"><br>
+            <input name="" type="text" id="apellido"><br>
+            <input type="button" value="OK" onclick="validacion()">
+        </form>
+
+        <div id="banner">
+            <p class="banner_text">Banner de prueba</p>
+            <input type="button" id="cerrar" value="cerrar" onclick="cerrar_banner()">
+        </div>
+
+    </div>
+    <script>/*Editar el mensaje con JS*/
+        /*var mensaje_buenas = document.getElementById("mensaje_buenas");
+        mensaje_buenas.style.backgroundColor = "grey";
+        mensaje_buenas.style.margin = "auto";
+        mensaje_buenas.style.width = "300px";
+        mensaje_buenas.style.height = "300px";
+        mensaje_buenas.style.textAlign = "center";
+        mensaje_buenas.innerHTML = "Como estas!";*///Reemplaza lo que tenda mensaje_buenas por un "como estas!"
+        /*Editar el mensaje con jQuery*/
+        //$("#mensaje_buenas").width(500).height(500).text("Como andas?!").hide().fadeIn(1500);
+    </script>
+</body>
+
+</html>

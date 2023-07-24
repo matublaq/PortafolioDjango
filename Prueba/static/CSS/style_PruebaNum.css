@@ -1,0 +1,66 @@
+* {
+    padding: 0px;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+/*--------------------*/
+body {
+    background-color: violet;
+}
+
+h1 {
+    color: rgba(248, 224, 224, 0.697);
+    background-color: blueviolet;
+    text-align: center;
+    
+    border-style: dashed;
+    border-color: black;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.navegation {
+    background-color: rgba(137, 43, 226, 0.567);
+    border: solid;
+    border-color:rgba(137, 43, 226, 0.567);
+
+    text-align: center;
+
+    
+}
+.navegation a:hover {
+    color: rgb(20, 175, 218);
+}
+
+.Form1{
+    background-color: pink;
+    
+    width: 250px;
+    height: 400px;
+    margin: 100px auto;
+    padding: 2px;
+
+    box-shadow: 1px 2px 2px 1px;
+
+    text-align: center;
+}
+
+.Form1 h2{
+    text-align: center;
+    border: solid;
+    margin: 3px;
+    background-color: rgb(243, 160, 173);
+}
+
+.Form1-inputs {
+    background-color: rgb(251, 182, 194);
+    display: flex;
+}
+
+.Form1-inputs input{
+    background-color: whitesmoke;
+}
+/*--------------------*/
+
+

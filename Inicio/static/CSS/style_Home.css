@@ -1,0 +1,181 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    /*-------fondo de la pagina-------*/
+    background-color: rgba(F, F, F, 0.7);  /* #dedede */
+    /*background-image: url('../media/imagenes/NubesColores.jpg');*/
+    background-size: 100% 100%;
+    /*"contain"=Tamaño de la imagen hasta donde toque la primera pared (no se deforma)*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* "scroll" la imagen queda quieta cuando scroleamos."fixed" la imagen nos sigue cuando scroleamos */
+    /*-------------------*/
+    padding: 3px;
+    font-family: 'Roboto Mono', monospace;
+    color: whitesmoke;
+}
+
+
+/*----------Header----------*/
+header {
+    display: block;
+    position: relative;
+    
+    height: 100px;
+    padding: 5px;  
+    
+    border-style: double;
+    border-color: rgba(0, 0, 0, 0.478);
+    background-color: rgba(37, 38, 36, 0.159);
+    
+    /* Organiza los elementos del contenedor poniendolos uno al lado del otro
+    flex-direction: row;*/
+    /* Organizacion principal del contenedor (Por defecto es "row")*/
+    /*IMPORTANTE... Si "flex-direction: column; entonces las propiedades de "justify-content" y "align-items" se invierten*/
+    
+    /*justify-content: space-between;
+    "Justify-center" Ubicacion de los elementos en el eje horizantal. "Space-between" pone los elementos en lados contrarios del contenedor */
+    
+    /*align-items: center;
+    "align-items" ubicacion de los elementos en el eje verticual. "center" centra los elementos */
+}
+
+/*---*/
+.nombre-marca {
+    /* Position */
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+
+    /* style */
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(0, 0, 0);
+}
+/*.logo img {
+    margin: 0px;
+    padding: 0px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}*/
+
+/*.fecha-y-hora-top {
+    position: absolute;
+    font-size: 12px;
+    top: 0px;
+    right: 5px;
+    text-align: center;
+    
+
+    background-color: rgba(150, 149, 149, 0.414);
+    border-radius: 50%;
+    width: 15em;
+}*/
+/*---*/
+
+.Prueba-seccion {
+    background-color: rgba(37, 38, 36, 0.159);
+    border: double;
+    /*border-color: rgba(128, 128, 128, 0.497);*/
+    margin: 1px 5px 0px 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.Prueba {
+    color: white;
+    font-size: 10px;
+}
+
+.Prueba-seccion a:hover{
+    color: black;
+}
+/*---*/
+/*--------------------------*/
+
+/*----------CIRCULOS----------*/
+.zona-circulos {
+    position: relative;
+    /*background-color: rgba(0, 0, 255, 0.144);*/
+    margin: auto;
+
+    height: 420px;
+    width: 420px;
+    color: #1E63C4;
+}
+
+.circulo-grande {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    /*background-color: rgba(4, 27, 8, 0.17);*/
+    width: 350px;
+    height: 396px;
+    border-radius: 50%;
+}
+.circulo-grande img{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    margin: 0px;
+    width: 300px;
+
+    border-radius: 50%;
+
+    box-shadow: 0px 0px 10px 12px #fcc04991;
+}
+
+.circulo {
+    background-color: #75AADB;  
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    
+    text-align: center;
+    font-size: 10px;
+}
+.circulo.python{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.circulo.typing{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.circulo.calculadora{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.circulo.aleatorio{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.circulo a{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+    color: whitesmoke;
+    text-decoration: none;
+}
+.circulo a:hover{
+    color: yellow;
+}
+/*-----------------------------*/

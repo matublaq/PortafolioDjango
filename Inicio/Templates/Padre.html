@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>     <!-- Indicamos que este va a ser un bloque variable -->
+    <title>{% block title %} {% endblock %}</title>
+
+    {% load static %}
+    <link href="{% static 'CSS/style_Home.css' %}", rel="stylesheet">
+    <!-- <link href="../static/CSS/style_Home.css", rel="stylesheet"> -->
+    {% block link %}{% endblock %}
+
+    <!-- ----------Google fonts---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <!-- -------------------------------- -->
+    <!-- ----------CSS---------- -->
+    <style>
+        
+    </style>
+    <!-- ----------------------- -->
+    <!-- ----------JS----------- -->
+    <script src="../static/JS/Home.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").hide().fadeIn(500);
+        })
+    </script>
+    <!-- ----------------------- -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="http://localhost:8000/Inicio/Home"><img src="../static/media/imagenes/EscudoBlaquier.jpg" , alt="logo de la marca"></a>
+            <h2 class="nombre-marca">Matublaq</h2>
+        </div>
+        <nav class="header-nav">
+            <a href="http://localhost:8000/Data_analytics/Bitcoin">Data</a>
+            <a href="http://localhost:8000/JuegoDeMemoria/MemoTest">MemoTest</a>
+            <a href="#">Contacto</a>
+        </nav>
+        <div class="fecha-y-hora-top">
+            <p>{{fecha_y_hora.day}}/{{fecha_y_hora.month}}/{{fecha_y_hora.year}}  {{fecha_y_hora.time}}</p>
+        </div>
+    </header>
+    {% block content %}
+    
+    {% endblock %}
+    <p>Este es el pie de la pagina</p>
+</body>
+</html>

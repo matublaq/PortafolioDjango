@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    {% load static %}
+    <link href="{% static 'CSS/style_calculadora.css' %}" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body onload="init()">
+    <header>
+        <a href="http://localhost:8000/Inicio/Home">Home</a>
+    </header>
+    <br><br><br>
+    <div id="calculadora">
+        <script src="../static/JS/calculadora.js"></script>
+
+        <table border="solid", id="mitabla1">
+            <tr>
+                <td colspan="4"><p style="border-style: none; text-align: center; color: rgb(31, 31, 31)"><strong>Calculadora</strong></p></td>
+            </tr>
+            <tr>
+                <td id="resultado" type="text" colspan="4" style="height: 60px; text-align: left;">0</td>   
+            </tr>
+            <tr>
+                <td><input type="button" value="(" id="open("></td>
+                <td><input type="button" value=")" id="close)"></td>
+                <td><input type="button" value="Reset" id="reset"></td>
+                <td style="width: 50px"><input type="button" value="Del" id="del"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" id="one"></td>
+                <td><input type="button" value="2" id="two"></td>
+                <td><input type="button" value="3" id="three"></td>
+                <td style="width: 50px"><input type="button" value="/" id="div"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" id="four"></td>
+                <td><input type="button" value="5" id="five"></td>
+                <td><input type="button" value="6" id="six"></td>
+                <td style="width: 50px"><input type="button" value="*" id="mult"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" id="seven"></td>
+                <td><input type="button" value="8" id="eight"></td>
+                <td><input type="button" value="9" id="nine"></td>
+                <td style="width: 50px"><input type="button" value="-" id="less"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="•" id="point"></td>
+                <td><input type="button" value="0" id="zero"></td>
+                <td><input type="button" value="=" id="equal"></td>
+                <td style="width: 50px"><input type="button" value="+" id="plus"></td>
+            </tr>
+            <tr>
+                <td colspan="4" style="height: 20px"><p style="font-size: 10px">Matublaq</p></td>
+            </tr>
+        </table> 
+    </div>
+    <br><br><br>
+    <div class="limitaciones-calculadora">
+        <p style="margin-left: 100px"><strong>Limitaciones de la calculadora</strong></p>
+        <br>
+        <ul style="margin-left: 50px">
+            <li>Solo se puede usar 1 parentesis dentro de otro parentesis.</li>
+            <li>Solo se puede usar hasta 3 digitos luego de la coma.</li>
+        </ul>
+    </div>
+</body>
+</html>
