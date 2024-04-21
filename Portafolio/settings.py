@@ -125,7 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFIELS_DIRS = (path.join(BASE_DIR, 'static'))
+#STATICFILES_DIRS = (path.join(BASE_DIR, 'static')) #Sirve para poder usar carpetas static que no esten dentro de una aplicacion
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
