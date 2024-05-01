@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Blaquier</title>
+
+    {% load static %}
+    <link href="{% static 'CSS/home3.css' %}", rel="stylesheet"> <!-- Django -->
+    <link href="../static/CSS/home3.css", rel="stylesheet"> <!-- Live server -->
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="inicio"><a href="#">mati</a></div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">inicio</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">sobre mi</a></li>
+                <li><a href="#skills" onclick="seleccionar()">skills</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">curriculum</a></li>
+                <li><a href="#projects" onclick="seleccionar()">projects</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="banner">
+            <img id="imgMain" src="../static/media/imagenes/Multicolor.jpg">
+        </div>
+        
+        <div style="height: 2000px; width: 50px;"></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
