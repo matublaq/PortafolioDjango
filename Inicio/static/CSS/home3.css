@@ -15,13 +15,13 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    align-items: center;
     left: 0;
     right: 0;
     margin: 0px auto;
 
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     height: 75px;
     background-color: #153448;
 
@@ -38,9 +38,20 @@ header a {
     transition: color 0.5s, font-size 0.3s;
 }
 
-/*--- nav ----*/
+/*--- inicio ---*/
+#inicio a {
+    font-size: 50px;
+    color: #DFD0B8;
+}
+/*--- nav ---*/
+#nav {
+    display: flex;
+    align-items: center;
+}
 #nav ul li {
     display: inline;
+    margin: 0px 10px;
+    align-items: center;
 }
 #nav a{
     font-size: 25px;
@@ -49,23 +60,61 @@ header a {
     color:#DFD0B8;
     font-size: 26px;
 }
-/*--- inicio ---*/
-#inicio a {
-    font-size: 50px;
-    color: #DFD0B8;
-}
+/*---------- ------ ----------*/
 
 /*---------- main ----------*/
 #banner {
-    margin: 200px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px auto;
+    padding: 25px;
 
     width: 300px;
-    height: 400px;
+    height: 420px;
     background-color:#3c5b6f71;
     border-radius: 25px;
 }
-
-#imgMain {
-    position: relative;
+#imgMati {
     width: 200px;
+    margin-bottom: 10px;
 }
+#imgMati img {
+    width: 200px;
+
+    border-radius: 50%;
+    border: 5px;
+    border-style: solid;
+    border-color: #dfd0b8cb;
+}
+#banner h1 {
+    width: auto;
+    margin-bottom: 5px;
+    font-size: 40px;
+
+    color: #DFD0B8;
+    
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#banner h2 {
+    width: auto;
+    font-size: 30px;
+
+    color: #DFD0B8;
+    
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#redes {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+
+    background-color: #948979;
+}
+/*---------- ---- ----------*/
