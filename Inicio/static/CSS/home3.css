@@ -10,9 +10,11 @@ body {
     padding: 0px 3px 3px 3px;
 }
 
+/*---------- pc screen ----------*/
 
 /*---------- header ----------*/
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +70,7 @@ header a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 150px auto;
+    margin: 300px auto;
     padding: 20px;
 
     width: 300px;
@@ -118,8 +120,10 @@ header a {
     background-color: #948979;
 }
 /*---------- ---- ----------*/
+/*---------- --------- ----------*/
+
 /*---------- mobile ----------*/
-@media (max-width: 776px) {
+@media (max-width: 700px) {
 
     /*---------- header ----------*/
     header {
@@ -128,18 +132,22 @@ header a {
     header #inicio {
         margin-bottom: 5px;
     }
+    header #nav a {
+        font-size: 25px;
+    }
 
     /*---------- ------ ----------*/
     /*---------- main ----------*/
     #banner {
-        width: 400px;
+        width: 350px;
         height: 450px;
+        margin: 200px auto;
     }
     #imgMati {
         margin-bottom: 20px;
     }
     #redes {
-        margin-top: 25px;
+        margin-top: 30px;
     }
     /*---------- ---- ----------*/
 }
