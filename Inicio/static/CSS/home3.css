@@ -14,6 +14,7 @@ body {
 
 /*---------- header ----------*/
 header {
+    padding: 10px;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -123,17 +124,17 @@ header a {
 /*---------- --------- ----------*/
 
 /*---------- mobile ----------*/
-@media (max-width: 700px) {
+@media (max-width: 780px) { /*700px*/
 
     /*---------- header ----------*/
     header {
         flex-direction: column;
     }
     header #inicio {
-        margin-bottom: 5px;
+        margin-bottom: 25px;
     }
     header #nav a {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     /*---------- ------ ----------*/
