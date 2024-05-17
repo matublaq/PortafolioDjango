@@ -19,8 +19,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    left: 0;
-    right: 0;
+    top: 0px;
+    left: 0px;
+    right: 0px;
     margin: 0px auto;
 
     width: 100%;
@@ -124,14 +125,14 @@ header a {
 /*---------- --------- ----------*/
 
 /*---------- mobile ----------*/
-@media (max-width: 780px) { /*700px*/
+@media (max-width: 780px) {
 
     /*---------- header ----------*/
     header {
         flex-direction: column;
     }
     header #inicio {
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
     header #nav a {
         font-size: 20px;

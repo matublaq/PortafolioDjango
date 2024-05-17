@@ -14,3 +14,6 @@ def Home(request):
 
 def Home2(request):
     return render(request, 'Home2.html')
+
+def Home3(request):
+    return render(request, 'Home3.html')
