@@ -10,7 +10,6 @@ body {
     padding: 0px 3px 3px 3px;
 }
 
-/*---------- pc screen ----------*/
 
 /*---------- header ----------*/
 header {
@@ -31,7 +30,7 @@ header {
 
     z-index: 99;
 }
-header a {
+header a{
     color: #948979;
     text-decoration: none;
     
@@ -43,7 +42,7 @@ header a {
 }
 
 /*--- inicio ---*/
-#inicio a {
+#inicio a{
     font-size: 50px;
     color: #DFD0B8;
 }
@@ -52,7 +51,7 @@ header a {
     display: flex;
     align-items: center;
 }
-#nav ul li {
+#nav ul li{
     display: inline;
     margin: 0px 10px;
     align-items: center;
@@ -64,16 +63,17 @@ header a {
     color:#DFD0B8;
     font-size: 26px;
 }
-/*---------- ------ ----------*/
+/*-------- end-header --------*/
 
 /*---------- main ----------*/
+/*---- banner ----*/
 #banner {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 300px auto;
-    padding: 20px;
+    padding: 15px;
 
     width: 300px;
     height: 420px;
@@ -84,7 +84,7 @@ header a {
     width: 200px;
     margin-bottom: 10px;
 }
-#imgMati img {
+#imgMati img{
     width: 200px;
 
     border-radius: 50%;
@@ -92,7 +92,7 @@ header a {
     border-style: solid;
     border-color: #dfd0b8cb;
 }
-#banner h1 {
+#banner h1{
     width: auto;
     margin-bottom: 5px;
     font-size: 40px;
@@ -103,7 +103,7 @@ header a {
     font-weight: 400;
     font-style: normal;
 }
-#banner h2 {
+#banner h2{
     width: auto;
     font-size: 30px;
 
@@ -115,14 +115,28 @@ header a {
 }
 #redes {
     display: flex;
-    margin-top: 10px;
+    margin-top: 18px;
     width: 100%;
     height: 50px;
+    	
+    justify-content: space-between;
+    align-items: center;
 
-    background-color: #948979;
+    background-color: #9489791c;
 }
-/*---------- ---- ----------*/
-/*---------- --------- ----------*/
+#redes a{
+    color: #DFD0B8;
+    background-color: #948979;
+
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+    margin: 5px;
+}
+/*---- end-banner ----*/
+/*-------- end-main --------*/
+/*-------- end-header --------*/
 
 /*---------- mobile ----------*/
 @media (max-width: 780px) {
@@ -138,7 +152,7 @@ header a {
         font-size: 20px;
     }
 
-    /*---------- ------ ----------*/
+    /*-------- end-header --------*/
     /*---------- main ----------*/
     #banner {
         width: 350px;
@@ -151,6 +165,6 @@ header a {
     #redes {
         margin-top: 30px;
     }
-    /*---------- ---- ----------*/
+    /*-------- end-main --------*/
 }
-/*---------- ------ ----------*/
+/*-------- end-mobile --------*/
